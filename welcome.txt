@@ -1,0 +1,12 @@
+
+  _____  _      ______           _____ ______
+ |  __ \| |    |  ____|   /\    / ____|  ____|
+ | |__) | |    | |__     /  \  | (___ | |__
+ |  ___/| |    |  __|   / /\ \  \___ \|  __|
+ | |    | |____| |____ / ____ \ ____) | |____
+ |_|    |______|______/_/    \_\_____/|______|
+
+Make sure you open the link including the token.
+If you just click "Open External" you will not be
+able to access the ruruku page.
+
