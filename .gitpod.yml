@@ -2,7 +2,7 @@ ports:
 - port: 8080
 tasks:
 - command: >
-    curl -o ruruku -L https://github.com/32leaves/ruruku/releases/download/v0.1.0/ruruku_v0.1.0_linux_amd64 &&
+    curl -o ruruku -L https://github.com/32leaves/ruruku/releases/download/v0.1.1/ruruku_v0.1.1_linux_amd64 &&
     chmod +x ruruku &&
     cat welcome.txt &&
     ./ruruku start testcases.yaml
