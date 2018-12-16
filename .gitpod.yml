@@ -1,8 +1,19 @@
 ports:
 - port: 8080
+  onOpen: open-browser
+- port: 1234
+  onOpen: ignore
 tasks:
-- command: >
-    curl -o ruruku -L https://github.com/32leaves/ruruku/releases/download/v0.1.1/ruruku_v0.1.1_linux_amd64 &&
+- name: Ruruku
+  command: >
+    curl -o ruruku -L https://github.com/32leaves/ruruku/releases/download/v0.3.0/ruruku_v0.3.0_linux_amd64 &&
     chmod +x ruruku &&
-    cat welcome.txt &&
     ./ruruku start testcases.yaml
+- name: Info
+  command: >
+    echo Login is admin/admin &&
+    sleep 5 &&
+    export PATH=/workspace/ruruku-demo &&
+    eval $(ruruku user login admin --password admin) &&
+    echo Run "ruruku --help" to get started
+  openMode: split-right

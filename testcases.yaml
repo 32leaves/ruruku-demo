@@ -1,5 +1,7 @@
-name: Demo Suite
-cases:
+id: demo
+name: Demo Plan
+description: ""
+case:
 - id: basics_start_server
   name: Start server
   group: basics
@@ -11,8 +13,8 @@ cases:
 
     # Execution
     run `ruruku start example-suite.yaml`
-  mustPass: false
-  minTesterCount: 5
+  mustpass: false
+  mintestercount: 5
 - id: basics_stop_server
   name: Stop server
   group: basics
@@ -23,3 +25,5 @@ cases:
 
     # Execution
     use `Ctrl+C` on a running ruruku process
+  mustpass: false
+  mintestercount: 2
